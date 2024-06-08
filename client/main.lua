@@ -3,7 +3,9 @@ Citizen.CreateThread(function ()
         local appid = "1222215777520849057"
         SetDiscordAppId(appid)
         SetDiscordRichPresenceAsset("bg")
-        SetDiscordRichPresenceAssetSmallText("Hi")
+        local ped = NetworkPlayerGetName
+        print(ped)
+        SetDiscordRichPresenceAssetText("YO")
     end
     
 end)
