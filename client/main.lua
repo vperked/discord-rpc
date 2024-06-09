@@ -1,5 +1,3 @@
-
-
 local function  main()
     while true do
     RegisterCommand("start", function (source,args)
@@ -8,12 +6,10 @@ local function  main()
     local appid = "1222215777520849057"
     SetDiscordAppId(appid)
     SetDiscordRichPresenceAsset("bg")
-    SetDiscordRichPresenceAssetText("Playing Diddy Party!")
+    SetDiscordRichPresenceAssetText("Playing  !")
     SetDiscordRichPresenceAction(0, "Play Now!", "fivem://connect/")
-    SetDiscordRichPresenceAction(1, "Website", "")
-    while true do
+    SetDiscordRichPresenceAction(1, "Website", "https://placeholder.lol")
     end
 end
 
-end
 Citizen.CreateThread(main)
