@@ -1,11 +1,19 @@
-Citizen.CreateThread(function ()
+
+
+local function  main()
     while true do
-        local appid = "1222215777520849057"
-        SetDiscordAppId(appid)
-        SetDiscordRichPresenceAsset("bg")
-        local ped = GetPlayerName
-        print(ped)
-        SetDiscordRichPresenceAssetText("YO")
+    RegisterCommand("start", function (source,args)
+    TriggerServerEvent("StartUp")
+    end, false)
+    local appid = "1222215777520849057"
+    SetDiscordAppId(appid)
+    SetDiscordRichPresenceAsset("bg")
+    SetDiscordRichPresenceAssetText("Playing Diddy Party!")
+    SetDiscordRichPresenceAction(0, "Play Now!", "fivem://connect/")
+    SetDiscordRichPresenceAction(1, "Website", "")
+    while true do
     end
-    
-end)
+end
+
+end
+Citizen.CreateThread(main)

@@ -6,3 +6,4 @@ description 'A discord RPC script'
 version '1.0.0'
 
 client_script 'client/main.lua'
+server_scripts 'server/main.lua'
